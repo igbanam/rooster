@@ -1,13 +1,7 @@
 " Vim color file
-" Name:       256_noir.vim
-" Maintainer: Andreas van Cranenburgh <andreas@unstable.nl>
-" Homepage:   https://github.com/andreasvc/vim-256noir/
-
-" Basically: dark background, numerals & errors red,
-" rest different shades of gray.
-"
-" colors 232--250 are shades of gray, from dark to light;
-" 16=black, 255=white, 196=red, 88=darkred.
+" Name:       rooster.vim
+" Maintainer: Igbanam (@igbanam)
+" Homepage:   https://github.com/igbanam/vim-rooster/
 
 highlight clear
 set background=dark
@@ -18,7 +12,7 @@ if version > 580
         syntax reset
     endif
 endif
-let g:colors_name = "256_noir"
+let g:colors_name = "rooster"
 
 if has("gui_running") || &t_Co == 256
     hi Normal cterm=NONE ctermfg=250 ctermbg=16 gui=NONE guifg=#bcbcbc guibg=#000000
@@ -123,7 +117,7 @@ highlight! link diffRemoved Comment
 highlight! link PmenuSbar Visual
 highlight! link PmenuSel Visual
 highlight! link VisualNOS Visual
-highlight! link VertSplit Visual
+highlight! link VertSplit Normal
 highlight! link Cursor StatusLine
 highlight! link Underlined SpellRare
 highlight! link rstEmphasis SpellRare
